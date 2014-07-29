@@ -7,7 +7,7 @@ import org.zidom.image.config.WebMvcConfig;
  * Spring mvc 配置
  * 
  * @author zidom
- *
+ * 
  */
 public class WebMvcDispatcherServletInitializer extends
 		AbstractAnnotationConfigDispatcherServletInitializer {

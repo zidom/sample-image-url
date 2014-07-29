@@ -7,6 +7,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages="org.zidom.image.controller")
-public class WebMvcConfig extends WebMvcConfigurerAdapter{
+@ComponentScan(basePackages = "org.zidom.image.controller")
+public class WebMvcConfig extends WebMvcConfigurerAdapter {
 }
