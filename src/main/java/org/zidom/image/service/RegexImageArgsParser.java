@@ -24,7 +24,13 @@ import org.zidom.image.service.ImageProcessCommand.Builder;
  * 
  *    <b>注意：</b>除以上两张情况外，其他情况不属于强制处理
  * 		
- * 4:  图片压缩比例
+ * 4:  图片类型，没有后缀
+ * 		1. jpg
+ * 		2. gif
+ * 		3. bmp
+ * 		4. jpeg
+ * 		5. png
+ * 		
  * 7:  宽度 
  * 8：   高度
  * 9:  预定的图片大小S,M,L
@@ -40,7 +46,7 @@ import org.zidom.image.service.ImageProcessCommand.Builder;
 public class RegexImageArgsParser implements
 		ImageArgsParser<ImageProcessCommand> {
 
-	private final String regex = "^([a-z0-9]+)((\\.(\\d+)_)|[_!.])?(((\\d+)x(\\d+))|([sml]))?(x([FN]))?(\\.[a-zA-Z]{3})$";
+	private final String regex = "^([a-z0-9]+)((\\.(\\d+)_)|[_!.])?(((\\d+)x(\\d+))|([sml]))?(x([FN]))?(\\.[a-zA-Z]{3})?$";
 
 	private final Pattern pattern = Pattern.compile(regex);
 
